@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exemplo de Flexbox</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+```
+
+CSS (styles.css):
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilizando links no hover */
+nav a:hover {
+    color: #0074d9;
+}
+```
+
+Neste exemplo, a barra de navegação é estilizada com o uso do Flexbox. Os elementos de lista são exibidos horizontalmente com espaçamento uniforme. Os links também mudam de cor quando o mouse passa sobre eles.
+
+Certifique-se de vincular o arquivo CSS (styles.css) ao seu arquivo HTML e abra o arquivo HTML no seu navegador para ver a barra de navegação em ação. Isso é apenas um exemplo simples de como o Flexbox pode ser usado para criar layouts flexíveis. Você pode adaptá-lo e expandi-lo conforme suas necessidades.
